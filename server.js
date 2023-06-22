@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 9000;
 connectedDb();
 
 app.get("/",(req,res)=> {
-    res.send('api is running')
+    res.send('Nodejs testing project api is running')
 })
 
 app.listen(process.env.PORT,()=> {
