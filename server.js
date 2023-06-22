@@ -4,7 +4,7 @@ const app = require("./app");
 const dotEnv = require("dotenv")
 dotEnv.config(); // Load environment variables from .env file
 const connectedDb = require("./config/database")
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 9000;
 
 
 connectedDb();
@@ -14,5 +14,5 @@ app.get("/",(req,res)=> {
 })
 
 app.listen(process.env.PORT,()=> {
-console.log(`PORT IS RUNNING ON ${process.env.PORT}`)
+console.log(`PORT IS RUNNING ON ${PORT}`)
 })
